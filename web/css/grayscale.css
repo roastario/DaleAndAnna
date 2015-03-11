@@ -147,8 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/grayheader.png) no-repeat bottom center scroll;
-    background-color: #000;
+    background: #000 url(../img/grayheader.png) no-repeat scroll bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -156,8 +155,15 @@ a:focus {
 }
 
 .venue-background{
-    background: url(../img/graymiddle.png) no-repeat bottom center scroll;
-    background-color: #000;
+    background: #000 url(../img/graymiddle.png) no-repeat scroll bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.form-background{
+    background: #000 url(../img/gray_masks.jpg) no-repeat scroll bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -383,4 +389,17 @@ body {
 
 select{
     color: #000000;
+}
+
+
+.dot-overlay {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -99;
+    height: 100%;
+    width: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIW2NkwAIYoWL/keQYSRdEMRkApoADBq1PyXMAAAAASUVORK5CYII=) left top repeat
 }
